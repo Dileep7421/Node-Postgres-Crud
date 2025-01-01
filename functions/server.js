@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json())
 
 
-app.use('/.netlify/functions/api', router);
+app.use('/users', router);
 
 app.listen(port, ()=>{
     console.log(`Server running on http://localhost:${port}`);
